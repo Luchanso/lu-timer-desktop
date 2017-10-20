@@ -1,13 +1,13 @@
 {
   "name": "lu-timer-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/main.js",
   "author": "Luchanso <luchansodev@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {},
   "scripts": {
-    "electron": "electron .",
+    "start": "electron .",
     "pack": "electron-builder --dir",
     "build": "electron-builder"
   },

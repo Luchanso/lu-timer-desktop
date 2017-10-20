@@ -20,7 +20,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(constants.APP_URL);
+  mainWindow.loadURL(constants.APP_URL + '?electron=1');
 
   mainWindow.setMenu(null);
   // mainWindow.webContents.openDevTools({ detach: true });

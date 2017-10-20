@@ -1,0 +1,37 @@
+{
+  "name": "lu-timer-desktop",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "Luchanso <luchansodev@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "scripts": {
+    "electron": "electron .",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-builder": "^19.37.2",
+    "electron-builder-squirrel-windows": "^19.39.0"
+  },
+  "build": {
+    "appId": "com.luchanso.lutimer",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "icon": "icon256.ico",
+    "nsis": {
+      "createDesktopShortcut": true
+    }
+  }
+}
